@@ -2,7 +2,7 @@ const Purpose = () => {
   return (
     <div className="bg-black flex flex-col items-center pt-[200px] pb-[100px] px-4 text-center">
       <img
-        src="../src/Purpose.png"
+        src="purpose.png"
         alt="philosophy"
         className="w-[100px] md:w-[120px] mb-6 animate-bounce"
       />

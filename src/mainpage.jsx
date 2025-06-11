@@ -20,7 +20,7 @@ const Mainpage = () => {
       {/* Image - Right side on laptop/desktop */}
       <div className="w-full lg:w-1/2 flex items-center justify-center order-2 lg:order-none mt-6 sm:mt-8 md:mt-10 lg:mt-0 lg:pl-8 xl:pl-12">
         <img
-          src={'../src/videoeditorprofile.png'}
+          src={'videoeditorprofile.png'}
           alt="Video Editor"
           className="object-contain h-auto max-h-[300px] xs:max-h-[350px] sm:max-h-[400px] md:max-h-[500px] lg:max-h-[600px] xl:max-h-[700px] 2xl:max-h-[800px] rounded-2xl shadow-2xl transition-transform duration-700 hover:scale-105"
         />

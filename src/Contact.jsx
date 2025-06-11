@@ -3,7 +3,7 @@ const Contact = () => {
     <>
       <div className="bg-black flex flex-col items-center pt-[150px] pb-[120px] text-center">
         <img
-          src={"../src/Contact.png"}
+          src={"contact.png"}
           className="w-[100px] md:w-[120px] mb-6 animate-bounce"
           alt="Contact Icon"
         />
