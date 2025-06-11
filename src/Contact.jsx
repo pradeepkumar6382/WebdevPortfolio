@@ -9,7 +9,7 @@ const Contact = () => {
         />
 
         <img
-          src={"../src/videoeditorprofile.png"}
+          src={"videoeditorprofile.png"}
           alt="Video Editor"
           className="w-40 h-40 rounded-full object-cover shadow-2xl transition-transform duration-500 hover:scale-105 object-[center_-10px]"
         />
