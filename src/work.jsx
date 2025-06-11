@@ -52,7 +52,7 @@ const Work = () => {
   return (
     <div className="bg-black flex flex-col items-center py-20 px-4 md:px-10 lg:px-20">
       <img
-        src={"../src/work.png"}
+        src={"work.png"}
         className="w-[80px] md:w-[100px] mb-4 animate-bounce"
         alt="work"
       />
