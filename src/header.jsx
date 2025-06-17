@@ -20,21 +20,20 @@ const Header = () => {
       <header className="sticky top-0 z-50 bg-black w-full flex justify-between items-center px-4 sm:px-8 lg:px-16 py-3 sm:py-4 lg:py-6 shadow-md">
         {/* Logo + Tagline */}
         <div className="text-white">
-          <h1 className="font-bebas text-2xl sm:text-3xl lg:text-4xl tracking-wide">PRADEEP UNCUT</h1>
+          <h1 className="font-bebas text-2xl sm:text-3xl lg:text-4xl tracking-wide">PRADEEP KUMAR</h1>
           <p className="font-bebas text-xs sm:text-sm text-white/30 tracking-[0.6px]">
-            FREELANCE VIDEO EDITOR
+            WEB DEVELOPER
           </p>
         </div>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden lg:flex gap-6 xl:gap-8 text-white text-sm items-center">
+         <nav className="hidden lg:flex gap-6 xl:gap-8 text-white text-sm items-center">
           <button onClick={scrollToWork} className="hover:text-orange-500 transition-colors duration-200 px-2 py-1">
             WORK
           </button>
-          <button onClick={scrollToShorts} className="hover:text-orange-500 transition-colors duration-200 px-2 py-1">
+          {/* <button onClick={scrollToShorts} className="hover:text-orange-500 transition-colors duration-200 px-2 py-1">
             SHORTS
-          </button>
-          <a href="#" className="hover:text-orange-500 transition-colors duration-200 px-2 py-1">
+          </button> */}
+          <a  href="/Pradeep_Kumar_Frontend_Developer_Resume.pdf" className="hover:text-orange-500 transition-colors duration-200 px-2 py-1">
             CV
           </a>
           <span className="text-white/50">|</span>
@@ -78,9 +77,9 @@ const Header = () => {
       <div ref={workRef} className="scroll-mt-24">
         <Work />
       </div>
-      <div ref={shortsRef} className="scroll-mt-24">
+      {/* <div ref={shortsRef} className="scroll-mt-24">
         <Shorts />
-      </div>
+      </div> */}
       <div className="scroll-mt-24">
         <Purpose />
       </div>

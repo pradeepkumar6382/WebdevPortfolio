@@ -1,29 +1,95 @@
+import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
+
+const imageVariants = {
+  hidden: {
+    opacity: 0,
+    scale: 0.3,
+    rotate: 20,
+    filter: "blur(20px)",
+    clipPath: "polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)",
+  },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    rotate: 0,
+    filter: "blur(0px)",
+    clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
+    transition: {
+      duration: 1.5,
+      ease: "easeInOut",
+    },
+  },
+};
+
+const ProfileImage = () => {
+  return (
+    <motion.img
+      src="profile.png"
+      alt="React Developer"
+      className="object-contain max-h-[700px] rounded-3xl shadow-2xl"
+      variants={imageVariants}
+      initial="hidden"
+      animate="visible"
+    />
+  );
+};
+
+
 const Mainpage = () => {
   return (
-    <div className="bg-black min-h-screen flex flex-col lg:flex-row items-center justify-center px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 relative overflow-hidden">
-      {/* Text Content - Left side on laptop/desktop */}
-      <div className="w-full lg:w-1/2 xl:w-2/5 z-10 order-1 lg:order-none mt-12 sm:mt-16 md:mt-20 lg:mt-0 lg:pr-8 xl:pr-12">
-       
-   <h1 className="font-outfit text-center text-white text-[40px] sm:text-[56px] md:text-[72px] lg:text-[88px] xl:text-[100px] leading-tight tracking-widest uppercase mb-8 animate-glitch">
-  CUTS.EDITS.
-  <br />
-  <span className="font-outfit text-white">MONTAGES.</span>
-</h1>
+    <div className="relative bg-black min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24">
+      {/* Main Content */}
+      <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center w-full">
+        {/* Text Side */}
+        <motion.div
+          initial={{ opacity: 0, y: 80 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2 }}
+          className="w-full lg:w-1/2 xl:w-2/5 text-center lg:text-left text-white space-y-8"
+        >
+          <motion.h1
+            initial={{ scale: 0.95, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ delay: 0.6, duration: 0.8 }}
+            className="text-[40px] sm:text-[56px] md:text-[72px] lg:text-[88px] xl:text-[100px] font-outfit uppercase tracking-widest leading-tight"
+          >
+            CODE. CRAFT.
+            <br />
+            <span className="text-green-400">CREATE.</span>
+          </motion.h1>
 
-        <h3 className="text-[16px] xs:text-[17px] sm:text-[18px] md:text-[19px] lg:text-[20px] text-white/70 leading-relaxed">
-          As an editor I help agencies, filmmakers and creatives in achieving their goals.
-          Tools like video editing, sound design and color correction empower us in telling your story.
-          From social media content to feature films: I will tackle every obstacle with you until the result is satisfying.
-        </h3>
-      </div>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.2 }}
+            className="text-white/70 text-lg md:text-xl max-w-xl mx-auto lg:mx-0"
+          >
+            I’m a React.js developer passionate about building immersive web experiences.
+            I blend React, Tailwind, and Framer Motion to build beautiful, fast, and powerful UIs.
+          </motion.p>
 
-      {/* Image - Right side on laptop/desktop */}
-      <div className="w-full lg:w-1/2 flex items-center justify-center order-2 lg:order-none mt-6 sm:mt-8 md:mt-10 lg:mt-0 lg:pl-8 xl:pl-12">
-        <img
-          src={'videoeditorprofile.png'}
-          alt="Video Editor"
-          className="object-contain h-auto max-h-[300px] xs:max-h-[350px] sm:max-h-[400px] md:max-h-[500px] lg:max-h-[600px] xl:max-h-[700px] 2xl:max-h-[800px] rounded-2xl shadow-2xl transition-transform duration-700 hover:scale-105"
-        />
+          {/* Download CV Button */}
+          <motion.a
+            href="/Pradeep_Kumar_Frontend_Developer_Resume.pdf"
+            download
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="inline-block mt-4 px-8 py-3 rounded-xl bg-green-500 text-black font-semibold hover:bg-green-400 transition-colors duration-300 shadow-md"
+          >
+            ⬇ Download Resume
+          </motion.a>
+        </motion.div>
+
+        {/* Image Side */}
+    <motion.div
+  initial="hidden"
+  animate="visible"
+  transition={{ delay: 1.5 }}
+  className="w-full lg:w-1/2 mt-10 lg:mt-0 flex justify-center"
+>
+  <ProfileImage />
+</motion.div>
       </div>
     </div>
   );
