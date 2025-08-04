@@ -5,12 +5,9 @@ const projects = [
     title: "E-Commerce Platform",
     img: "ecommerce.png",
     Github: "https://github.com/pradeepkumar6382/Halleyx",
-    Live: "https://ecommerce-project-u172.vercel.app/",
+    Live: "https://halleyx.vercel.app/",
     description:
-      "A full-stack e-commerce web application featuring separate portals for customers and admins. Customers can register, browse products, manage profiles, and place orders. Admins can manage products, customers, and orders with full CRUD capabilities, view dashboard stats, impersonate customers for support, and customize portal branding."
-      "Authentication: JWT-based login for both roles with secure password hashing"
-      "Admin Access: Email: admin@example.com | Password: admin123"
-      "Features include pagination, filtering, order tracking, and session-based impersonation with a clear UI banner.",
+      "A full-stack e-commerce web application featuring separate portals for customers and admins. Customers can register, browse products, manage profiles, and place orders. Admins can manage products, customers, and orders with full CRUD capabilities, view dashboard stats, impersonate customers for support, and customize portal branding.Authentication: JWT-based login for both roles with secure password hashing.Admin Access: Email: admin@example.com | Password: admin123.Features include pagination, filtering, order tracking, and session-based impersonation with a clear UI banner."
     tools: ["MongoDB", "Express.js", "React.js", "Node.js","JWT","Bcrypt"],
   },
   {
