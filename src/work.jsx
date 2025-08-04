@@ -2,6 +2,18 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
+    title: "E-Commerce Platform",
+    img: "ecommerce.png",
+    Github: "https://github.com/pradeepkumar6382/Halleyx",
+    Live: "https://ecommerce-project-u172.vercel.app/",
+    description:
+      "A full-stack e-commerce web application featuring separate portals for customers and admins. Customers can register, browse products, manage profiles, and place orders. Admins can manage products, customers, and orders with full CRUD capabilities, view dashboard stats, impersonate customers for support, and customize portal branding."
+      "Authentication: JWT-based login for both roles with secure password hashing"
+      "Admin Access: Email: admin@example.com | Password: admin123"
+      "Features include pagination, filtering, order tracking, and session-based impersonation with a clear UI banner.",
+    tools: ["MongoDB", "Express.js", "React.js", "Node.js","JWT","Bcrypt"],
+  },
+  {
     title: "Random Quote Generator",
     img: "randomquote.png",
     Github: "https://github.com/pradeepkumar6382/Randomquote",
@@ -9,15 +21,6 @@ const projects = [
     description:
       "A beautifully designed Random Quote Generator built with React.js, styled using Tailwind CSS, and powered by the API Ninjas Quotes API. Each visit or button click fetches a fresh, inspiring quote with a visually aesthetic background.",
     tools: ["React.js", "Tailwind CSS", "API Ninjas"],
-  },
-  {
-    title: "E-Commerce Platform",
-    img: "ecommerce.png",
-    Github: "https://github.com/pradeepkumar6382/Ecommerce-Project",
-    Live: "https://ecommerce-project-u172.vercel.app/",
-    description:
-      "Full-stack MERN E-commerce site with authentication, product management, and smooth UX. Users can browse, search, and purchase products securely and efficiently.",
-    tools: ["MongoDB", "Express.js", "React.js", "Node.js"],
   },
   {
     title: "Redux-based To-Do List App",
